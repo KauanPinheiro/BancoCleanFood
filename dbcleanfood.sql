@@ -101,7 +101,7 @@ select * from tbavaliacao;
 select * from tbcliente;
 select * from tbingredientesreceitas;
 select * from tbmedida;
-
+select * from tbquantidade;
 
 
 
