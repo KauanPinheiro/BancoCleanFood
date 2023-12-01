@@ -1,4 +1,3 @@
-drop database dbcleanfood;
 
 create database dbcleanfood;
 
