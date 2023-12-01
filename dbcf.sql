@@ -95,6 +95,19 @@ desc tbquantidades;
 desc tbpassos;
 
 
+-- Insirindo dados 
+insert into tbusuarios(datanasc,endereco,cidade,bairro,cep,nome,cpf,email,telCel,senha)
+                values('2023/12/01','rua consolação','São Paulo','São judas','04858-260','Kaio santana','321.423.535-98','kaio.santana@hotmail','98754-4567','Teste@123');
+
+-- Atualizando dados
+
+-- Apagando dados 
+
+-- Buscando dados 
+
+select * from tbusuarios;
+
+
 
 
 
