@@ -79,6 +79,7 @@ codPasso int not null auto_increment,
 mododePreparo varchar(100) not null,
 tempodePreparo varchar(50) not null,
 codReceita int not null,
+descricao varchar(100) not null,
 primary key (codPasso),
 foreign key (codReceita)references tbreceitas(codReceita)
 );
@@ -94,6 +95,7 @@ desc tbmedidas;
 desc tbquantidades;
 desc tbpassos;
 
+ 
 
 
 
@@ -101,3 +103,5 @@ desc tbpassos;
 
 
 
+
+    
