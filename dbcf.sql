@@ -101,17 +101,34 @@ desc tbpassos;
 
 -- Insirindo dados 
 insert into tbusuarios(datanasc,endereco,cidade,bairro,cep,nome,cpf,email,telCel,senha)
-                values('2023/12/01','rua consolação','São Paulo','São judas','04858-260','Kaio santana','321.423.535-98','kaio.santana@hotmail','98754-4567','Teste@123');
+        values('2023/12/01','rua consolação','São Paulo','São judas','04858-260','Kaio santana','321.423.535-98','kaio.santana@hotmail.com','98754-4567','Teste@123');
+ insert into tbusuarios(datanasc,endereco,cidade,bairro,cep,nome,cpf,email,telCel,senha)
+        values('2019/05/11','rua inhamus','São Paulo','Vila Prudente','04785-589','Julia Santos','347.475.758-32','julinha.santod@gmail.com','97459-4753','Teste@789');
+insert into tbusuarios(datanasc,endereco,cidade,bairro,cep,nome,cpf,email,telCel,senha)
+        values('2005/07/07','rua puruba','São Paulo','Vila gilda','07896-789','Roberto Andrade','789.756.376-18','robeto.andrade@hotmail.com','97569-3796','Teste@196');
+insert into tbusuarios(datanasc,endereco,cidade,bairro,cep,nome,cpf,email,telCel,senha)
+        values('2012/04/05','rua taquandava','São Paulo','Cidade ipava','03214-456','Lucas Souza','461.693.478-63','kaio.santana@hotmail.com','95832-5497','Teste@896');                                
+insert into tbusuarios(datanasc,endereco,cidade,bairro,cep,nome,cpf,email,telCel,senha)
+        values('2000/11/01','rua das nações unidas','São Paulo','São paulo','07514-527','Viviane Silva','189.347.534-56','vivi.silva@hotmail.com','96941-6764','Teste@635');
+
+
 insert into tbclientes(nome,sobrenome,senha,datanasc,cpf,email,codUsuario)
-            values("Gabriel","Nascimento","123456","2023/12/04","432.123.765-76","gabrwil.lindo@hotmail.br",1);
+        values("Gabriel","Nascimento","123456","2023/12/04","432.123.765-76","gabrwil.lindo@hotmail.br",1);
+
+
+
+
+
 insert into tbreceitas(rendePorcoes,nomeReceita,codCliente)
             values(4,"Bolo vegano de brigadeiro",1);
+
 insert into tbavaliacoes(comentario,dataComentario,codReceita)
             values("bom demais","2023/12/04 12:12:00",1);
+
 insert into tbingredientes(nomeIngrediente,rendeMedidas,codReceita)
             values("leite","1/2",1);
 
-insert into()values();
+
 -- Atualizando dados
 
 -- Apagando dados 
