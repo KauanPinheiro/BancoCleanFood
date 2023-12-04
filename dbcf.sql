@@ -112,13 +112,8 @@ insert into tbusuarios(datanasc,endereco,cidade,bairro,cep,nome,cpf,email,telCel
 insert into tbusuarios(datanasc,endereco,cidade,bairro,cep,nome,cpf,email,telCel,senha)
         values('2000/11/01','rua das nações unidas','São Paulo','São paulo','07514-527','Viviane Silva','189.347.534-56','vivi.silva@hotmail.com','96941-6764','Teste@635');
 
-
 insert into tbclientes(nome,sobrenome,senha,datanasc,cpf,email,codUsuario)
         values("Gabriel","Nascimento","123456","2023/12/04","432.123.765-76","gabrwil.lindo@hotmail.br",1);
-
-
-
-
 
 insert into tbreceitas(rendePorcoes,nomeReceita,codCliente)
             values(4,"Bolo vegano de brigadeiro",1);
