@@ -113,7 +113,7 @@ insert into tbquantidades(nomeQtde,qtdeIngrediente,codMedida)
             values("gramas","duas coleres de sopa",1);
 insert into tbpassos(mododePreparo,tempodePreparo,codReceita,descricao)
             values("Aqueca o forno a temperatura ambiente","30 min",1,"tenha um aptite");
-
+insert into tbclientes()values();
 -- Atualizando dados
 
 -- Apagando dados 
