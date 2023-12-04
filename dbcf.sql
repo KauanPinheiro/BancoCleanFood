@@ -66,7 +66,7 @@ primary key(codMedida),
 foreign key (codIngrediente)references tbingredientes(codIngrediente)
 );
 
-
+insert into tbmedidas(g)
 
 create table tbquantidades(
 codQtde int not null auto_increment,
@@ -109,6 +109,8 @@ insert into tbavaliacoes(comentario,dataComentario,codReceita)
             values("bom demais","2023/12/04 12:12:00",1);
 insert into tbingredientes(nomeIngrediente,rendeMedidas,codReceita)
             values("leite","1/2",1);
+
+insert into()values();
 -- Atualizando dados
 
 -- Apagando dados 
