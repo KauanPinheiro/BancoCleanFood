@@ -58,16 +58,13 @@ foreign key(codReceita)references tbreceitas(codReceita)
 );
 create table tbmedidas(
 codMedida int not null auto_increment,
-grama char(1),
+grama char(1) default 'g',
 quilograma char(2) default 'kg',
 mililitro char(2) default 'ml',
 codIngrediente int not null,
 primary key(codMedida),
 foreign key (codIngrediente)references tbingredientes(codIngrediente)
 );
-
-insert into tbmedidas(g)
-
 create table tbquantidades(
 codQtde int not null auto_increment,
 nomeQtde varchar(50) not null,
@@ -85,6 +82,7 @@ descricao varchar(100) not null,
 primary key (codPasso),
 foreign key (codReceita)references tbreceitas(codReceita)
 );
+
 
 show tables;
 
@@ -109,8 +107,13 @@ insert into tbavaliacoes(comentario,dataComentario,codReceita)
             values("bom demais","2023/12/04 12:12:00",1);
 insert into tbingredientes(nomeIngrediente,rendeMedidas,codReceita)
             values("leite","1/2",1);
+insert into tbmedidas(codIngrediente)
+            values( 1);
+insert into tbquantidades(nomeQtde,qtdeIngrediente,codMedida)
+            values("gramas","duas coleres de sopa",1);
+insert into tbpassos(mododePreparo,tempodePreparo,codReceita,descricao)
+            values("Aqueca o forno a temperatura ambiente","30 min",1,"tenha um aptite");
 
-insert into()values();
 -- Atualizando dados
 
 -- Apagando dados 
@@ -122,6 +125,8 @@ select * from tbclientes;
 select * from tbreceitas;
 select * from tbavaliacoes;
 select * from tbingredientes;
+select * from tbmedidas;
+select * from tbquantidades;
 
 
 
