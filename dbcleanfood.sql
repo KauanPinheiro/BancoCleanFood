@@ -240,8 +240,36 @@ insert into tbpassos(mododePreparo,tempodePreparo,codReceita,descricao)
 
 
 -- Atualizando dados
+update tbusuarios set nome = "Nome Atualizado" where codUsuario = 4;
+update tbusuarios set cep = "00000-000" where codUsuario = 5;
+
+update tbclientes set sobrenome = "Sobrenome Atualizado" where codUsuario = 4;
+update tbclientes set datanasc = "0000/00/00" where codUsuario = 5;
+
+update tbreceitas set rendePorcoes = 0 where codCliente = 4;
+update tbreceitas set nomeReceita = "Receita atualizada" where codCliente = 5;
+
+update tbavaliacoes set comentario = "Comentario Atualizado" where codReceita = 4;
+update tbavaliacoes set dataComentario = "0000/00/00 00:00:00" where codReceita = 5;
+
+update tbingredientes set nomeIngrediente = "Ingrediente Atualizado" where codReceita = 4;
+update tbingredientes set rendeMedidas = "0/0" where codReceita = 5;
+
+update tbquantidades set nomeQtde = "Quantidade atualizada" where codMedida = 4;
+update tbquantidades set qtdeIngrediente = "Quantidade atualizada" where codMedida = 5;
+
+update tbpassos set mododePreparo = "Modo de preparo atualizado" where codReceita = 4;
+update tbpassos set tempodePreparo = "0h00 min" where codReceita = 5;
+
 
 -- Apagando dados 
+
+delete from tbavaliacoes where codReceita = 3;
+
+delete from tbingredientes where  = 3;
+
+
+
 
 -- Buscando dados 
 
