@@ -274,12 +274,8 @@ update tbpassos set tempodePreparo = "5h atualizado com sucesso!" where codPasso
 update tbpassos set descricao = "Depois adicionar complemento ao seu gosto atualizado" where codPasso = 1;
 
 
--- Apagando dados da tabela tbusuarios
 
 
--- Apagando dados da tabela tbclientes
-
--- Apagando dados da tabela tbreceitas
 
 
 -- Buscando dados 
