@@ -1,12 +1,12 @@
 drop database dbcleanfood;
 
-<<<<<<< HEAD
+
 create database dbcleanfood;
 
 use dbcleanfood;
 
 
-=======
+
 -- Criando o banco 
 create database dbcleanfood;
 
@@ -14,8 +14,8 @@ create database dbcleanfood;
 use dbcleanfood;
 
 
--- Criando as tabelas 
->>>>>>> 6bef6df78f6c0ca5ef8747724c43714a8102783a
+Criando as tabelas 
+
 create table tbusuarios(
 codUsuario int not null auto_increment,
 datanasc date not null,
@@ -96,10 +96,9 @@ foreign key (codReceita)references tbreceitas(codReceita)
 
 show tables;
 
-<<<<<<< HEAD
-=======
+
 -- Mostrando a estrutura das tabelas 
->>>>>>> 6bef6df78f6c0ca5ef8747724c43714a8102783a
+
 desc tbusuarios;
 desc tbclientes;
 desc tbreceitas;
@@ -110,7 +109,7 @@ desc tbquantidades;
 desc tbpassos;
 
 
-<<<<<<< HEAD
+
 -- Insirindo dados 
 insert into tbusuarios(datanasc,endereco,cidade,bairro,cep,nome,cpf,email,telCel,senha)
 values('2023/12/01','rua consolação','São Paulo','São judas','04858-260','Kaio santana','321.423.535-98','kaio.santana@hotmail','98754-4567','Teste@123');
@@ -138,7 +137,7 @@ values("Aqueca o forno a temperatura ambiente","30 min",1,"tenha um aptite");
 -- Atualizando dados
 
 -- Apagando dados 
-=======
+
 -- Insirindo dados na tbusuario
 insert into tbusuarios(datanasc,endereco,cidade,bairro,cep,nome,cpf,email,telCel,senha)
 values('2023/12/01','rua consolação','São Paulo','São judas','04858-260','Kaio santana','321.423.535-98','kaio.santana@hotmail','98754-4567','Teste@123');
@@ -328,7 +327,5 @@ select * from tbavaliacoes;
 select * from tbingredientes;
 select * from tbmedidas;
 select * from tbquantidades;
-<<<<<<< HEAD
-=======
 select * from tbpassos;
->>>>>>> 6bef6df78f6c0ca5ef8747724c43714a8102783a
+
