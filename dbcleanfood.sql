@@ -274,8 +274,29 @@ update tbpassos set tempodePreparo = "5h atualizado com sucesso!" where codPasso
 update tbpassos set descricao = "Depois adicionar complemento ao seu gosto atualizado" where codPasso = 1;
 
 
+-- Deletando os dados da tabela tbusuarios
+delete from tbusuarios where cidade = 'São Paulo' ;
 
+-- Deletando os dados da tabela tbreceitas
+delete from tbreceitas where codReceita = 1 ;
 
+-- Deletando os daods da tabela tbclientes 
+delete from tbclientes where codCliente = 1;
+
+-- Deletando os dados da tabela tbavaliacoes *
+delete from tbavaliacoes where codAvaliacao = 1;
+
+-- Deletando os dados da tabela tbingredientes 
+delete from tbingredientes where codIngrediente = 1;
+
+-- Deletando os dados da tabela tbmedidas
+delete from tbmedidas where codMedida = 1;
+
+-- Deletando os dados da tabela tbqtade *
+delete from tbquantidades where codQtde = 1;
+
+-- Deletando os dados da tabela tbpassos *
+delete from tbpassos where codPasso = 1;
 
 
 -- Buscando dados 
